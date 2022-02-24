@@ -1,5 +1,5 @@
 import { render } from 'solid-js/web'
+import App from "./layout/App.jsx"
 
-const App = () => "Hello World"
-
-render(App, document.body)
+  
+render(App, document.getElementById("root"))
