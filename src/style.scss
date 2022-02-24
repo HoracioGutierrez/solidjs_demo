@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700');
+
+$primary-color: #00bcd4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html , body , #root{
+    height: 100vh;
+}
+
+body {
+    background-color: #c3c3c3;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 30px;
+
+    &__header {
+        
+        &Text {
+            font-weight: 100;
+            font-size: 30px;
+        }
+
+        &Value {
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &__actions {
+
+        button {
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            background-color: $primary-color;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        &Button--sumar {
+            margin-right: 0.5rem;
+        }
+
+        &Button--restar {
+            margin-left: 0.5rem;
+        }
+    }
+
+}
