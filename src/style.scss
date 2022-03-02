@@ -19,8 +19,32 @@ body {
 
 #root {
     display: flex;
+    flex-direction: column;
+}
+
+.layout-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
+
+    &__nav {
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.layout-main {
+    flex-grow: 1;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .counter {
